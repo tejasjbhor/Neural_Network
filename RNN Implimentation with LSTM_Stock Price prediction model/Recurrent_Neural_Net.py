@@ -23,7 +23,7 @@ training_set_scaled = sc.fit_transform(training_set)
 
 X_train = []
 y_train = []
-for i in range(60, 1258):
+for i in range(80, 1258):
     X_train.append(training_set_scaled[i-60:i, 0])
     y_train.append(training_set_scaled[i, 0])
 X_train, y_train = np.array(X_train), np.array(y_train)
